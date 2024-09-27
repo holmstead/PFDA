@@ -1,2 +1,2 @@
 # PFDA
-Programming for Data Analytics
+PROGRAMMING FOR DATA ANALYTICS
