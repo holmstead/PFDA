@@ -26,6 +26,12 @@ There are some notebooks in this repository that can be opened in Google [CoLab]
   <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/>
 </a>
 
+**Project - Windspeed Analysis**
+
+<a target="_blank" href="https://colab.research.google.com/github/holmstead/PFDA/blob/main/project/windspeed.ipynb">
+  <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/>
+</a>
+
 Links above were generated using [Openincolab](https://openincolab.com/)
 
 
@@ -73,7 +79,6 @@ Juypter Notebooks and VSCode help can be found here:
 
 - https://code.visualstudio.com/docs/introvideos/basics
 
-The Python interperter can be downloaded [here](https://www.python.org/downloads/). 
 
 ## Author
 
