@@ -6,7 +6,7 @@ This repository contains submissions for the Programming for Data Analytics modu
 
 ## Quickstart
 
-There are some notebooks in this repository that can be opened in Google [CoLab](https://colab.research.google.com/) using the links below:
+There are some [Jupyter notebooks](https://jupyter.org/) in this repository that can be opened in Google [CoLab](https://colab.research.google.com/) using the links below:
 
 **Assignment 2 - Weather**: Plotting Temperature over Time
 
