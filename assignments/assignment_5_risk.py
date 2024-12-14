@@ -1,4 +1,6 @@
-# Simulates 1000 individual battle rounds in Risk (3 attacker vs 2 defender) and plots the result.
+# Simulates two scenarios:
+#   - Part One: 1000 individual battle rounds in Risk (3 attacker vs 2 defender) and plots the results
+#   - Part Two: a full series of rounds for armies of arbitrary sizes, until one side is wiped out
 
 import numpy as np
 import matplotlib.pyplot as plt
@@ -23,21 +25,23 @@ def check_winner(attacker_number, defender_number):
     attacker_losses = 0
     defender_losses = 0
     if attacker_number > defender_number:
-        print(f"Attackers {attacker_number} beats defenders {defender_number}")
+        #print(f"Attackers {attacker_number} beats defenders {defender_number}")
         defender_losses += 1 
-        print("Defender loses 1 troop.")
+        #print("Defender loses 1 troop.")
     elif attacker_number < defender_number:
-        print(f"Defenders {defender_number} beats attackers {attacker_number}")
+        #print(f"Defenders {defender_number} beats attackers {attacker_number}")
         attacker_losses += 1
-        print("Attacker loses 1 troop.")
+        #print("Attacker loses 1 troop.")
     elif attacker_number == defender_number:
-        print(f"Attackers {attacker_number} vs defenders {defender_number}")
+        #print(f"Attackers {attacker_number} vs defenders {defender_number}")
         attacker_losses += 1
-        print("Tie: Attacker loses 1 troop.")
+        #print("Tie: Attacker loses 1 troop.")
     return attacker_losses, defender_losses
 
 # now do 1000 battles
-print(r"""                                                                                                
+print("\nPart One: 1000 Battles")
+time.sleep(2)
+print(r"""                                                                                                      
                    L E T   T H E   B A T T L E   B E G I N !
 """)
 
@@ -101,8 +105,8 @@ for i in range(number_of_rounds):
     #print(f"total defender losses: {total_defender_losses}")
 
 
-print(f"\nTotal attacker losses: {total_attacker_losses}")
-print(f"Total defender losses: {total_defender_losses}")
+#print(f"\nTotal attacker losses: {total_attacker_losses}")
+#print(f"Total defender losses: {total_defender_losses}")
 
 
 if total_attacker_losses > total_defender_losses:
@@ -131,22 +135,31 @@ plt.tight_layout()
 plt.show()
 
 
-
-
+#############################################################################
 
 
 # war with two armies
-
-print(r"""                                                                                                
-                   L E T   T H E   B A T T L E   B E G I N !
-""")
+time.sleep(2)
+print("\n\nPart Two: full series of rounds with two armies")
+time.sleep(2)
 
 # define the army sizes
 attacker_troops = 200
 defender_troops = 200
 
-print(f"Attacker starts with {attacker_troops}")
-print(f"Defender starts with {defender_troops}")
+print(f"\n\tAttacker starts with {attacker_troops} troops")
+print(f"\tDefender starts with {defender_troops} troops")
+
+time.sleep(3)
+
+print(r"""                                                                                                     
+                   L E T   T H E   B A T T L E   B E G I N !
+""")
+time.sleep(1)
+print("\t**more carnage**")
+time.sleep(3)
+
+
 
 # reset counters
 total_attacker_losses = 0
@@ -157,7 +170,7 @@ while attacker_troops > 0 and defender_troops > 0:
     # reset counters
     total_attacker_losses = 0
     total_defender_losses = 0
-    print(f"\nRound {i+1}")
+    #print(f"\nRound {i+1}")
 
     # check how many troops that the attacker has before rolling
     if attacker_troops >=3:
@@ -185,8 +198,8 @@ while attacker_troops > 0 and defender_troops > 0:
     sorted_defender = np.sort(defender_rolls)[::-1]
 
     # print the soretd lists to see whats going on
-    print(f"\tAttacker rolls (sorted): {sorted_attacker}")
-    print(f"\tDefender rolls (sorted): {sorted_defender}")
+    #print(f"\tAttacker rolls (sorted): {sorted_attacker}")
+    #print(f"\tDefender rolls (sorted): {sorted_defender}")
 
     # compare highest die value
     attacker_number = sorted_attacker[0]
@@ -222,8 +235,8 @@ while attacker_troops > 0 and defender_troops > 0:
     if attacker_troops <= 0 or defender_troops <= 0:
         break
     
-    print(f"\nAttacker now has {attacker_troops}")
-    print(f"Defender now has: {defender_troops}")
+    #print(f"\nAttacker now has {attacker_troops}")
+    #print(f"Defender now has: {defender_troops}")
 
     i += 1
 
@@ -233,8 +246,8 @@ while attacker_troops > 0 and defender_troops > 0:
 print(f"\n\nGAME OVER")
 
 if attacker_troops > 0:
-    print(f"Attacker wins with {attacker_troops} troops left")
-    print(f"Defender army has been wiped out: {defender_troops} troops left")
+    print(f"\tAttacker wins with {attacker_troops} troops left")
+    print(f"\tDefender army has been wiped out: {defender_troops} troops left")
 elif defender_troops > 0:
-    print(f"Defender wins with {defender_troops} troops left")
-    print(f"Attacker army has been wiped out: {attacker_troops} troops left")
+    print(f"\tDefender wins with {defender_troops} troops left")
+    print(f"\tAttacker army has been wiped out: {attacker_troops} troops left")
