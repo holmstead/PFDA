@@ -243,11 +243,13 @@ while attacker_troops > 0 and defender_troops > 0:
 #print(f"\nTotal attacker losses: {total_attacker_losses}")
 #print(f"Total defender losses: {total_defender_losses}")
 
-print(f"\n\nGAME OVER")
+print(f"\n\n\t\t\t\tGAME OVER")
 
+time.sleep(2)
 if attacker_troops > 0:
-    print(f"\tAttacker wins with {attacker_troops} troops left")
-    print(f"\tDefender army has been wiped out: {defender_troops} troops left")
+    print(f"\n\tAttacker wins with {attacker_troops} troops left")
+    print(f"\tDefender army has been wiped out.")
 elif defender_troops > 0:
+
     print(f"\tDefender wins with {defender_troops} troops left")
-    print(f"\tAttacker army has been wiped out: {attacker_troops} troops left")
+    print(f"\tAttacker army has been wiped out.")
