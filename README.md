@@ -1,6 +1,6 @@
 # Programming for Data Analytics (PFDA)
 
-![Example caption](img/banner1.png)
+![Example caption](img/banner.png)
 
 This repository contains submissions for the Programming for Data Analytics module at Atlantic Technologic University (ATU). 
 
@@ -28,7 +28,7 @@ There are some notebooks in this repository that can be opened in Google [CoLab]
 
 **Project - Windspeed Analysis**
 
-<a target="_blank" href="https://colab.research.google.com/github/holmstead/PFDA/blob/main/project/windspeed.ipynb">
+- <a target="_blank" href="https://colab.research.google.com/github/holmstead/PFDA/blob/main/project/windspeed.ipynb">
   <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/>
 </a>
 
@@ -48,8 +48,10 @@ for project work
 - `mywork/`
 misc practice
 
+Code was written in Python using [VS Code](https://code.visualstudio.com/).
 
 ## Get Started
+
 ### Requirements
 
 To run contents of this repository, ensure you have the following installed:
@@ -73,7 +75,7 @@ Python libraries Matplotlib, Pandas, Seaborn, and Scikit-learn all have comprehe
 s
 - https://scikit-learn.org/stable/index.html
 
-Juypter Notebooks and VSCode help can be found here:
+Juypter Notebooks and VSCode help can be found using the links below:
 
 - https://jupyter.brynmawr.edu/services/public/dblank/Jupyter%20Notebook%20Users%20Manual.ipynb
 
@@ -90,3 +92,4 @@ holmstead@protonmail.com
 
 Banner image generated using [DALL.E 3](https://openai.com/index/dall-e-3/) by OpenAI.
 
+Code debugging and refactoring was done with the aid of a locally-installed open-source Large Language Model (LLM) [Ollama](https://github.com/ollama/ollama), specifically the Code LLama model.
