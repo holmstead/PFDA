@@ -50,6 +50,10 @@ misc practice
 
 Code was written in Python using [VS Code](https://code.visualstudio.com/).
 
+Assignments involve analysing, manipulating and visualising data from a variety of sources.
+
+The project is an in-depth analysis of windpeeds around Ireland using data from [MET Eireann](https://www.met.ie/).
+
 ## Get Started
 
 ### Requirements
@@ -60,7 +64,7 @@ To run contents of this repository, ensure you have the following installed:
 
 2. **Dependencies**: Install the required Python packages by running:
   ```bash
-  $ python pip install matplotlib pandas seaborn sklearn notebook
+  $ pip install -r requirements.txt
    ```
 
 ## Get Help
