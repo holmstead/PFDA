@@ -1,0 +1,11 @@
+numpy
+pandas
+matplotlib
+seaborn
+geopandas
+shapely
+scikit-learn
+skunk
+cairosvg
+ipython
+requests
